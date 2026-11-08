@@ -26,7 +26,7 @@ typedef _Destination = ({
 });
 
 class _ResponsiveShellState extends State<ResponsiveShell> {
-  static const double IS_WIDE_BOUNDARY = 600;
+  static const double _railBreakpoint = 600;
   int _pageIndex = 0;
 
   static const List<_Destination> _destinations = [
@@ -68,7 +68,7 @@ class _ResponsiveShellState extends State<ResponsiveShell> {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints) {
-        final useRail = constraints.maxWidth >= IS_WIDE_BOUNDARY;
+        final useRail = constraints.maxWidth >= _railBreakpoint;
 
         return Scaffold(
           appBar: _buildAppBar(context),
@@ -92,17 +92,17 @@ class _ResponsiveShellState extends State<ResponsiveShell> {
   }
 
   Widget _buildHorizonalPages() {
-      return PageView(
-        key: const PageStorageKey<String>('shell-pages'),
-        controller: _pageCtrl,
-        onPageChanged: _onPageChanged,
-        children: [for (final dest in _destinations) dest.page],
-      );
+    return PageView(
+      key: const PageStorageKey<String>('shell-pages'),
+      controller: _pageCtrl,
+      onPageChanged: _onPageChanged,
+      children: [for (final dest in _destinations) dest.page],
+    );
   }
 
   Widget _buildVerticalPages() {
     return Stack(
-      fit: StackFit.expand,   // 让每页都拿到紧约束，否则 Center 之类的会缩成子组件大小
+      fit: StackFit.expand, // 让每页都拿到紧约束，否则 Center 之类的会缩成子组件大小
       children: [
         for (var i = 0; i < _destinations.length; i++)
           IgnorePointer(
@@ -132,6 +132,9 @@ class _ResponsiveShellState extends State<ResponsiveShell> {
       title: const Text('MexyLaziness'),
       centerTitle: true,
       backgroundColor: colorScheme.surfaceContainer,
+      actions: [
+        // IconButton(onPressed: (), icon: Icon(Icons.brightness_auto))
+      ],
     );
   }
 
@@ -180,8 +183,8 @@ class _ResponsiveShellState extends State<ResponsiveShell> {
     if (_pageCtrl.hasClients) {
       _pageCtrl.animateToPage(
         index,
-        duration: m3e.M3EMotion.medium2,              // 300ms
-        curve: m3e.M3EMotion.emphasizedDecelerate,   // Cubic(0.05, 0.7, 0.1, 1)
+        duration: m3e.M3EMotion.medium2, // 300ms
+        curve: m3e.M3EMotion.emphasizedDecelerate, // Cubic(0.05, 0.7, 0.1, 1)
       );
     }
   }
