@@ -1,7 +1,7 @@
 import 'package:material_ui/material_ui.dart';
 
-import 'package:mexy_laziness/app/app.dart';
-import 'package:mexy_laziness/features/configuration/configuration.dart';
+import 'package:idearest/app/app.dart';
+import 'package:idearest/features/configuration/configuration.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();

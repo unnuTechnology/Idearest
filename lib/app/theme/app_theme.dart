@@ -1,6 +1,6 @@
 import 'package:material_ui/material_ui.dart';
 
-import 'package:mexy_laziness/app/theme/app_color_schemes.dart';
+import 'package:idearest/app/theme/app_color_schemes.dart';
 
 /// 全局主题：字体、配色、组件默认值都集中在这里。
 abstract final class AppTheme {

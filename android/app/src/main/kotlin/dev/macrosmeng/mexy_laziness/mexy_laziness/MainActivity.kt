@@ -1,4 +1,4 @@
-package dev.macrosmeng.mexy_laziness.mexy_laziness
+package dev.macrosmeng.idearest.idearest
 
 import io.flutter.embedding.android.FlutterActivity
 

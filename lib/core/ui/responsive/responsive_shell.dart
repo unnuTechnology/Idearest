@@ -1,9 +1,9 @@
 import 'package:material_ui/material_ui.dart';
 import 'package:material_3_expressive/material_3_expressive.dart' as m3e;
 
-import 'package:mexy_laziness/features/fragments/presentation/pages/fragments_page.dart';
-import 'package:mexy_laziness/features/loops/presentation/pages/loops_page.dart';
-import 'package:mexy_laziness/features/today/presentation/pages/today_page.dart';
+import 'package:idearest/features/fragments/presentation/pages/fragments_page.dart';
+import 'package:idearest/features/loops/presentation/pages/loops_page.dart';
+import 'package:idearest/features/today/presentation/pages/today_page.dart';
 
 /// 响应式外壳：负责「导航结构」，不负责页面内容。
 ///
@@ -129,7 +129,7 @@ class _ResponsiveShellState extends State<ResponsiveShell> {
   m3e.M3EAppBar _buildAppBar(BuildContext context) {
     final colorScheme = m3e.M3ETheme.of(context).colorScheme;
     return m3e.M3EAppBar.top(
-      title: const Text('MexyLaziness'),
+      title: const Text('Idearest'),
       centerTitle: true,
       backgroundColor: colorScheme.surfaceContainer,
       actions: [

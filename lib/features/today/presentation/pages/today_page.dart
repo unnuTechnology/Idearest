@@ -1,8 +1,8 @@
 import 'package:m3e_core/m3e_core.dart';
 import 'package:material_ui/material_ui.dart';
 
-import 'package:mexy_laziness/features/configuration/configuration.dart';
-import 'package:mexy_laziness/features/today/presentation/widgets/seconds_clock.dart';
+import 'package:idearest/features/configuration/configuration.dart';
+import 'package:idearest/features/today/presentation/widgets/seconds_clock.dart';
 
 /// Today 页。
 class TodayPage extends StatelessWidget {

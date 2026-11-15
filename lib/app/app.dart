@@ -1,8 +1,8 @@
 import 'package:material_ui/material_ui.dart';
 
-import 'package:mexy_laziness/app/theme/app_theme.dart';
-import 'package:mexy_laziness/core/ui/responsive/responsive_shell.dart';
-import 'package:mexy_laziness/features/configuration/configuration.dart';
+import 'package:idearest/app/theme/app_theme.dart';
+import 'package:idearest/core/ui/responsive/responsive_shell.dart';
+import 'package:idearest/features/configuration/configuration.dart';
 
 /// 应用根组件：只做「装配」——配置、主题、壳、路由。
 ///
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
     return ConfigurationScope(
       configuration: configuration,
       child: MaterialApp(
-        title: 'MexyLaziness',
+        title: 'Idearest',
         theme: AppTheme.light,
         darkTheme: AppTheme.dark,
         home: const ResponsiveShell(),

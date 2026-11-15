@@ -89,13 +89,13 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "dev.macrosmeng.mexy_laziness" "\0"
-            VALUE "FileDescription", "mexy_laziness" "\0"
+            VALUE "CompanyName", "dev.macrosmeng.idearest" "\0"
+            VALUE "FileDescription", "idearest" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "mexy_laziness" "\0"
-            VALUE "LegalCopyright", "Copyright (C) 2026 dev.macrosmeng.mexy_laziness. All rights reserved." "\0"
-            VALUE "OriginalFilename", "mexy_laziness.exe" "\0"
-            VALUE "ProductName", "mexy_laziness" "\0"
+            VALUE "InternalName", "idearest" "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2026 dev.macrosmeng.idearest. All rights reserved." "\0"
+            VALUE "OriginalFilename", "idearest.exe" "\0"
+            VALUE "ProductName", "idearest" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

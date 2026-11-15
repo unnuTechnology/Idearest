@@ -1,7 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'package:mexy_laziness/features/configuration/configuration.dart';
+import 'package:idearest/features/configuration/configuration.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();

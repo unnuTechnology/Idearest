@@ -3,8 +3,8 @@ import 'package:material_ui/material_ui.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'package:mexy_laziness/app/app.dart';
-import 'package:mexy_laziness/features/configuration/configuration.dart';
+import 'package:idearest/app/app.dart';
+import 'package:idearest/features/configuration/configuration.dart';
 
 void main() {
   testWidgets('拖动滑块后，滑块位置与配置保持同步', (tester) async {

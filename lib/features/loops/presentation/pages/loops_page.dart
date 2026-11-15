@@ -1,5 +1,5 @@
 import 'package:material_ui/material_ui.dart';
-import 'package:mexy_laziness/features/widgets.dart';
+import 'package:idearest/features/widgets.dart';
 
 /// 循环页。
 class LoopsPage extends StatelessWidget {

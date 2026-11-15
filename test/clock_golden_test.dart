@@ -3,7 +3,7 @@ import 'dart:io';
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:material_ui/material_ui.dart';
-import 'package:mexy_laziness/features/today/presentation/widgets/seconds_clock.dart';
+import 'package:idearest/features/today/presentation/widgets/seconds_clock.dart';
 
 /// 加载真实的可变字体——测试环境默认用占位字体，不加载的话字形没有意义。
 Future<void> _loadFont(String family, String path) async {
